@@ -44,7 +44,8 @@ console.log(consume("Mary", "Poppins", greeting));
 //  items that are outside of it.  If nestedFunction() were outside the closure of 'internal', it would 
 //  not be able to access it.  In this particular case, the closure for 'internal' is the closure of 
 //  the function 'myFunction'.  Since 'nestedFunction()' is also inside of 'myFunction()' closure, it 
-//  can access 'internal'.
+//  can access 'internal'.  --> It can access the variable because it looks outside of the scope to search
+//  for the variable being referenced.
 
 const external = "I'm outside the function";
 

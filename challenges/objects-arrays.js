@@ -88,9 +88,14 @@ Name email@example.com
 Log the result of your new array. */
 const contactInfo = [];
 
-graduates.forEach(function(item) {
-  contactInfo.push(`${item.first_name} ${item.email}`)
-});
+for(let i = 0; i < graduates.length; i++) {
+  contactInfo.push(graduates[i].first_name + " " + graduates[i].email)
+}
+
+// graduates.forEach(function(item) {
+//   contactInfo.push(`${item.first_name} ${item.email}`)
+// });
+
 console.log(contactInfo);
 
 
